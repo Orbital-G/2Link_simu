@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build C++ Program",
+            "type": "shell",
+            "command": "/usr/bin/clang++",
+            "args": [
+                "-std=c++17",
+                "-g",
+                "-I", "/Users/kcbcp/Labo_document/2Link_simu/include",
+                "-I", "/Users/kcbcp/Labo_document/2Link_simu/include/linearAlgebra",
+                "-I", "/Users/kcbcp/Labo_document/2Link_simu/include/linearAlgebra/vector",
+                "/Users/kcbcp/Labo_document/2Link_simu/src/simu.C",
+                "/Users/kcbcp/Labo_document/2Link_simu/include/linearAlgebra/vector/vector.C",
+                "-o", "/Users/kcbcp/Labo_document/2Link_simu/build/simu"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
